@@ -1,0 +1,48 @@
+/* users */
+
+{
+    "_id": "1234567890abcdefghijkl",
+    "userName": "JanDeMan",
+    "password": {
+        "hash": "QWERTYUIOP!@#$%^&*()",
+        "salt": "QWERTYUIOP!@#$%^&*()"
+    },
+    "firstName": "Jan",
+    "lastName": "van Loon",
+    "birthDay": "1980-09-06T00:00:00.000Z",
+    "email": "test@test.com",
+    "phone": {
+      "mobile": "06-12345678",
+      "home": "0165-555555"
+    },
+    "street": "Kerkstraat",
+    "house": "17a",
+    "po": "4707XM",
+    "city": "Roosendaal",
+    "login": {
+        "last": "2014-09-06T18:25:43.511Z",
+        "passwordTries": 3,
+        "locked": false
+    },
+    "contact": {
+        "paper": false,
+        "sms": false,
+        "whatsapp": true,
+        "phone": true,
+        "email": true
+    },
+    "roles": [
+        "admin", "user"
+    ],
+    "tournaments": [
+        {
+            "tournamentId": "1234567890abcdefghijkl",
+            "hasPayed": true,
+            "approved": true,
+            "holiday": {
+                "start": "2014-09-01T18:25:43.511Z",
+                "end": "2014-09-10T18:25:43.511Z"
+            }
+        }
+    ]
+}

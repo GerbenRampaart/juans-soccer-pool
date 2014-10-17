@@ -1,0 +1,543 @@
+/* tournaments */
+{
+    "_id": "1234567890abcdefghijkl",
+    "local": [
+        {
+            "culture": "nl-NL",
+            "short": "WK2014",
+            "long": "Wereldkampioenschap voetbal 2014",
+            "location": "Brazilië"
+        },
+        {
+            "culture": "en-US",
+            "short": "WC2014",
+            "long": "2014 FIFA World Cup",
+            "location": "Brazil"
+        }
+    ],
+    "year": 2014,
+    "teams": [
+        {
+            "_id": "1234567890abcdefghijkl",
+            "local": [
+                {
+                    "culture": "nl-NL",
+                    "name": "Nederland",
+                    "country": "Nederland"
+                },
+                {
+                    "culture": "en-US",
+                    "name": "The Netherlands",
+                    "country": "The Netherlands"
+                }
+            ],
+            "group": "A",
+            "players": [
+                {
+                    "_id": "1234567890abcdefghijkl",
+                    "birthDay": "1983-09-06T18:25:43.511Z",
+                    "firstName": "Robin",
+                    "lastName": "van Persie",
+                    "position": "FR", /* GK, FR, DF or MD */
+                    "squadNumber": 20,
+                    "isCaptain": true
+                }
+            ]
+        }
+    ],
+    "matches": [
+        {
+            "_id": "1234567890abcdefghijkl",
+            /* http://stackoverflow.com/questions/10286204/the-right-json-date-format */
+            "played": "2012-04-23T18:25:43.511Z",
+            "location": "Roosendaal",
+            "isLocked": false,
+            "homeActualScore": 0,
+            "awayActualScore": 1,
+            "homeTeamId": "1234567890abcdefghijkl",
+            "awayTeamId": "1234567890abcdefghijkl",
+            "roundId": "1234567890abcdefghijkl",
+            "cards": [
+                {
+                    "minute": 33,
+                    "isYellow": true,
+                    "isRed": false,
+                    "playerId": "1234567890abcdefghijkl"
+                }
+            ],
+            "goals": [
+                {
+                    "minute": 66,
+                    "isPenalty": true,
+                    "isFreeKick": false,
+                    "isOwnGoal": false,
+                    "isDuringPenaltyShootOut": false,
+                    "isDuringOvertime": false,
+                    "assistPlayerId": "1234567890abcdefghijkl",
+                    "goalPlayerId": "1234567890abcdefghijkl"
+                }
+            ]
+        }
+    ],
+    "rounds":[
+        {
+            "_id": "1234567890abcdefghijkl",
+            "code": 10,
+            "local": [
+                {
+                    "culture": "nl-NL",
+                    "name": "Poule fase"
+                },
+                {
+                    "culture": "en-US",
+                    "name": "Group stage"
+                }
+            ],
+            "numberOfSeatedTeamsAllowed": 64,
+            "isLocked": false
+        }
+    ],
+    "scoreTypes": [
+        {
+            "code": 1,
+            "name": "Poulewedstrijd Exact goed",
+            "description": "Uitslag Poulewedstrijd exact goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 3,
+            "entryType": "match",
+            "roundCode": 10
+        },
+        {
+            "code": 2,
+            "name": "Poulewedstrijd Balans goed",
+            "description": "Poulewedstrijd winnaar of gelijkspel goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "match",
+            "roundCode": 10
+        },
+        {
+            "code": 3,
+            "name": "Langste puntenreeks",
+            "description": "Aaneengesloten aantal wedstrijden punten behaald",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 4,
+            "name": "1/8 Finalewedstrijd Exact goed",
+            "description": "Uitslag 1/8 Finalewedstrijd Exact goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 4,
+            "entryType": "match",
+            "roundCode": 20
+        },
+        {
+            "code": 5,
+            "name": "1/8 Finalewedstrijd Balans goed",
+            "description": "1/8 Finalewedstrijd winnaar of gelijkspel goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 3,
+            "entryType": "match",
+            "roundCode": 20
+        },
+        {
+            "code": 6,
+            "name": "1/4 Finalewedstrijd Exact goed",
+            "description": "Uitslag 1/4 Finalewedstrijd Exact goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 4,
+            "entryType": "match",
+            "roundCode": 30
+        },
+        {
+            "code": 7,
+            "name": "1/4 Finalewedstrijd Balans goed",
+            "description": "1/4 Finalewedstrijd winnaar of gelijkspel goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 3,
+            "entryType": "match",
+            "roundCode": 30
+        },
+        {
+            "code": 8,
+            "name": "1/2 Finalewedstrijd Exact goed",
+            "description": "Uitslag 1/2 Finalewedstrijd Exact goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 6,
+            "entryType": "match",
+            "roundCode": 40
+        },
+        {
+            "code": 9,
+            "name": "1/2 Finalewedstrijd Balans goed",
+            "description": "1/2 Finalewedstrijd winnaar of gelijkspel goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 4,
+            "entryType": "match",
+            "roundCode": 40
+        },
+        {
+            "code": 10,
+            "name": "Finalewedstrijd Exact goed",
+            "description": "Uitslag Finalewedstrijd Exact goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 6,
+            "entryType": "match",
+            "roundCode": 50
+        },
+        {
+            "code": 11,
+            "name": "Finalewedstrijd Balans goed",
+            "description": "Finalewedstrijd winnaar of gelijkspel goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 4,
+            "entryType": "match",
+            "roundCode": 50
+        },
+        {
+            "code": 12,
+            "name": "1/8 Finalist goed",
+            "description": "Per goed gekozen 1/8 finalist",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 10
+        },
+        {
+            "code": 13,
+            "name": "1/4 Finalist goed",
+            "description": "Per goed gekozen 1/4 finalist",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 4,
+            "entryType": "team",
+            "roundCode": 20
+        },
+        {
+            "code": 14,
+            "name": "1/2 Finalist goed",
+            "description": "Per goed gekozen 1/2 finalist",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 6,
+            "entryType": "team",
+            "roundCode": 30
+        },
+        {
+            "code": 15,
+            "name": "Finalist goed",
+            "description": "Per goed gekozen finalist",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 8,
+            "entryType": "team",
+            "roundCode": 40
+        },
+        {
+            "code": 16,
+            "name": "Toernooiwinnaar goed",
+            "description": "Toernooiwinnaar goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 10,
+            "entryType": "team",
+            "roundCode": 50
+        },
+        {
+            "code": 17,
+            "name": "Land Topscorer goed",
+            "description": "Land Topscorer goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 5,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 18,
+            "name": "Naam Topscorer goed",
+            "description": "Naam Topscorer goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 5,
+            "entryType": "player",
+            "roundCode": 0
+        },
+        {
+            "code": 19,
+            "name": "Aantal doelpunten VOOR toernooiwinnaar goed",
+            "description": "Aantal doelpunten VOOR toernooiwinnaar goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 20,
+            "name": "Aantal doelpunten topscorer goed",
+            "description": "Aantal doelpunten topscorer goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 21,
+            "name": "Topscorer Nederland goed",
+            "description": "Topscorer Nederland goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "player",
+            "roundCode": 0
+        },
+        {
+            "code": 22,
+            "name": "Aantal doelpunten topscorer Nederland goed",
+            "description": "Aantal doelpunten topscorer Nederland goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 23,
+            "name": "Totaal doelpunten VOOR Nederland goed",
+            "description": "Totaal doelpunten VOOR Nederland goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 24,
+            "name": "Totaal doelpunten TEGEN Nederland goed",
+            "description": "Totaal doelpunten TEGEN Nederland goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 25,
+            "name": "Totaal doelpunten toernooi goed",
+            "description": "Totaal doelpunten toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": true,
+            "scoreAmount": 10,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 26,
+            "name": "Totaal aantal rode kaarten toernooi goed",
+            "description": "Totaal aantal rode kaarten toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": true,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 27,
+            "name": "Totaal aantal gele kaarten toernooi goed",
+            "description": "Totaal aantal gele kaarten toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": true,
+            "scoreAmount": 4,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 28,
+            "name": "Totaal aantal penalties toernooi goed",
+            "description": "Totaal aantal penalties toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 29,
+            "name": "Land met eerste rode kaart van het toernooi goed",
+            "description": "Land met eerste rode kaart van het toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 30,
+            "name": "Land met eerste penalty tegen van het toernooi goed",
+            "description": "Land met eerste penalty tegen van het toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 31,
+            "name": "Land met eerste eigen doelpunt van het toernooi goed",
+            "description": "Land met eerste eigen doelpunt van het toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 32,
+            "name": "Land met snelste doelpunt van het toernooi goed",
+            "description": "Land met snelste doelpunt van het toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 33,
+            "name": "Land met meeste gele en rode kaarten goed",
+            "description": "Land met meeste gele en rode kaarten goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 34,
+            "name": "Land met meeste doelpunten VOOR goed",
+            "description": "Land met meeste doelpunten VOOR goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 35,
+            "name": "Land met meeste doelpunten TEGEN goed",
+            "description": "Land met meeste doelpunten TEGEN goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 36,
+            "name": "Land met minste doelpunten VOOR goed",
+            "description": "Land met minste doelpunten VOOR goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 37,
+            "name": "Land met minste doelpunten TEGEN goed",
+            "description": "Land met minste doelpunten TEGEN goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "team",
+            "roundCode": 0
+        },
+        {
+            "code": 38,
+            "name": "Aantal doelpunten TEGEN toernooiwinnaar goed",
+            "description": "Aantal doelpunten TEGEN toernooiwinnaar goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        },
+        {
+            "code": 39,
+            "name": "Minuut snelste goal goed",
+            "description": "De minuut van het snelste doelpunt van het toernooi goed",
+            "isCounted": true,
+            "isLocked": false,
+            "nearestGetsHalf": false,
+            "scoreAmount": 2,
+            "entryType": "amount",
+            "roundCode": 0
+        }
+    ],
+    "seatings": [
+        {
+            "teamId": "1234567890abcdefghijkl",
+            "roundId": "1234567890abcdefghijkl"
+        }
+    ],
+    "misc": [
+        {
+            "scoreTypeId": "1234567890abcdefghijkl",
+            "actualValue": "Nederland"
+        }
+    ]
+}

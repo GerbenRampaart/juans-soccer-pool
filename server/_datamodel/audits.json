@@ -1,0 +1,33 @@
+﻿
+/* audits */
+
+
+{
+    "_id": "1234567890abcdefghijkl",
+    /*
+        This is to make sure we can archive old audits which do no apply to
+        the active tournament. This field can be null if it doesn't apply to
+        any particular tournament.
+    */
+    "tournamentId": "1234567890abcdefghijkl",
+    "crud": "u",
+    "when": "2014-09-06T18:25:43.511Z",
+    /*
+        Can be any user. Either admin or regular.
+    */
+    "who": "1234567890abcdefghijkl",
+    /* Optional description. Can be null. */
+    "why": "Squadnumber was changed because it was wrong",
+    "what": {
+        /*
+            "seatingEstimate", "seating", "matchEstimate", "match", "miscEstimate", "misc",
+            "tournament", "team", "player", "card", "goal", "round", "scoreType"
+        */
+        "obj": "player",
+        "objId": "1234567890abcdefghijkl",
+        /* Both old and new can be null. Optional. */
+        "old": "11",
+        "new": "20"
+    }
+}
+

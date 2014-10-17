@@ -1,0 +1,15 @@
+
+/* scoreSummary */
+
+{
+    "_id": "1234567890abcdefghijkl",
+    "generated": "2014-09-06T18:25:43.511Z",
+    "tournamentId": "1234567890abcdefghijkl",
+    "users": [
+        {
+            "userId": "1234567890abcdefghijkl",
+            "fullName": "Jan de gebruiker",
+            "score": 145
+        }
+    ]
+}
