@@ -1,0 +1,27 @@
+
+
+/* estimates */
+
+{
+    "tournamentId": "1234567890abcdefghijkl",
+    "userId": "1234567890abcdefghijkl",
+    "matches": [
+        {
+            "matchId": "1234567890abcdefghijkl",
+            "home": 3,
+            "away": 2
+        }
+    ],
+    "seatings": [
+        {
+            "teamId": "1234567890abcdefghijkl",
+            "roundId": "1234567890abcdefghijkl"
+        }
+    ],
+    "misc": [
+        {
+            "scoreTypeId": "1234567890abcdefghijkl",
+            "userValue": "Nederland"
+        }
+    ]
+}

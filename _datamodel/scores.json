@@ -1,0 +1,23 @@
+﻿
+/* scores */
+
+{
+    "_id": "1234567890abcdefghijkl",
+    "userId": "1234567890abcdefghijkl",
+    "tournamentId": "1234567890abcdefghijkl",
+    "scoreTypeId": "1234567890abcdefghijkl",
+
+    "team":
+    {
+        "estimateId": "1234567890abcdefghijkl",
+        "actualId": "1234567890abcdefghijkl"
+    },
+    "match":
+    {
+        "estimate"
+    },
+    "misc":
+    {
+
+    }
+}
